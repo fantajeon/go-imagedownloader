@@ -19,7 +19,7 @@ func NewFileNameFromURL(url string) string {
 
 func download_image(rawURL string) (string, string, error) {
 	var filename string
-	fmt.Println("Downloading file...")
+	//fmt.Println("Downloading file...")
 	check := http.Client{
 		CheckRedirect: func(r *http.Request, via []*http.Request) error {
 			r.URL.Opaque = r.URL.Path
